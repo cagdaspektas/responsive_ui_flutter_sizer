@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:responsive_flutter/feature/home_screen.dart';
+import 'package:responsive_flutter/feature/second_view.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -23,10 +24,15 @@ class _LoginScreenState extends State<LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 30.h,
-            child: Image.network("https://m.media-amazon.com/images/I/518fAl617rL._AC_SY1000_.jpg"),
-          ),
+          SizerUtil.orientation == Orientation.portrait
+              ? SizedBox(
+                  height: 30.h,
+                  child: Image.network("https://m.media-amazon.com/images/I/518fAl617rL._AC_SY1000_.jpg"),
+                )
+              : SizedBox(
+                  height: 10.h,
+                  child: Image.network("https://m.media-amazon.com/images/I/518fAl617rL._AC_SY1000_.jpg"),
+                ),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 1.h),
             child: _emailFormField(),
@@ -43,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SecondPageScreen()));
               },
               child: Text(
                 "Login",
