@@ -1,17 +1,11 @@
 # responsive_flutter
 
-A new Flutter project.
+Responsive ui with using sizer package
 
-## Getting Started
+on Tablet it looks like this:
 
-This project is a starting point for a Flutter application.
+![tabletLTB](https://user-images.githubusercontent.com/62350321/170473406-c44f79a7-9863-402c-ac1f-8ac92a9ef1a9.gif)
 
-A few resources to get you started if this is your first Flutter project:
+on phone it looks like this:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# responsive_ui_flutter_sizer
+![phoneTel](https://user-images.githubusercontent.com/62350321/170473497-4e885d9e-2743-4d16-8e16-5cf5275b7d3d.gif)

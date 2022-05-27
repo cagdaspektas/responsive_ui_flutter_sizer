@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           SizerUtil.orientation == Orientation.portrait
               ? SizedBox(
-                  height: 30.h,
+                  height: 20.h,
                   child: Image.network("https://m.media-amazon.com/images/I/518fAl617rL._AC_SY1000_.jpg"),
                 )
               : SizedBox(
